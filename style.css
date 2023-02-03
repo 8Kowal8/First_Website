@@ -1,0 +1,58 @@
+:root{
+    --mainColor: #aa4444;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#logoLink{
+    display: block;
+    text-align: center;
+}
+header > hr{
+    width: 80%;
+}
+/* -------- Menu -------- */
+.topNav{
+    text-align: center;
+}
+.topNav a{
+    display: inline-block;
+    color: var(--mainColor);
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.topNav a:hover{
+    background-color: var(--mainColor);
+    color: white;
+}
+.topNav .mobMenuIcon{
+    display: none;
+}
+@media screen and (max-width: 800px){
+    .topNav{
+        text-align: left;
+    }
+    .topNav a:not(:first-child){
+        display: none;
+    }
+    .topNav a.mobMenuIcon{
+        display: block;
+        float: right;
+    }
+    .topNav.responsive {
+        position: relative;
+    }
+    .topNav.responsive a.mobMenuIcon{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topNav.responsive a {
+        display: block;
+        text-align: left;
+        float: none;
+    }
+}
+/* -------- /Menu -------- */
