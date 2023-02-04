@@ -103,8 +103,50 @@ main .container #mainAside{
     flex: 30vw;
 }
 
-
 /* -------- /Main -------- */
+
+/* -------- Article -------- */
+
+.artThumbnail{
+    display: block;
+    width: 100%;
+}
+.entryMeta{
+    padding: 1rem 0;
+}
+.entryMeta a{
+    color: var(--mainColor);
+    text-decoration: none;
+}
+.faMyClass{
+    font-size: 0.3rem;
+    position: relative;
+    bottom: 0.2rem;
+    padding: 0 0.2rem;
+}
+article h2 a{
+    text-decoration: none;
+    font-style: italic;
+    font-weight: 600;
+    font-family: Noto Serif;
+    line-height: 1.4;
+}
+article p{
+    color: gray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.entryFooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+}
+.shareIcons a{
+    color: #776b6b;
+    font-size: 1.2rem;
+    letter-spacing: 1rem;
+}
+/* -------- /Article -------- */
 
 @media screen and (max-width: 800px){
 
@@ -158,5 +200,15 @@ main .container #mainAside{
     main .container #mainAside{
         flex: auto;
     }
+    
     /* -------- /Main -------- */
+   
+    /* -------- Article -------- */
+
+    .entryFooter{
+        flex-direction: column-reverse;
+        row-gap: 1rem;;
+    }
+
+    /* -------- /Article -------- */
 }
