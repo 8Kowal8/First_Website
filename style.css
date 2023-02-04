@@ -1,5 +1,6 @@
 :root{
     --mainColor: #aa4444;
+    --bgColor: #ccc;
 }
 body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -21,8 +22,8 @@ body{
     border: 2px solid var(--mainColor)
 }
 .btn:hover{
-    background-color: white;
-    color: var(--mainColor);
+    background: none;
+    color: rgb(202, 57, 57);
     text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.6);
 }
 #logoLink{
@@ -32,7 +33,9 @@ body{
 header > hr{
     width: 80%;
 }
+
 /* -------- Menu -------- */
+
 .topNav{
     text-align: center;
 }
@@ -51,9 +54,11 @@ header > hr{
 .topNav .mobMenuIcon{
     display: none;
 }
+
 /* -------- /Menu -------- */
 
 /* -------- Banner -------- */
+
 .banner{
     background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.6)), url(images/background.jpg) no-repeat;
     background-size: cover;
@@ -78,9 +83,33 @@ header > hr{
 
 /* -------- /Banner -------- */
 
+/* -------- Main -------- */
+
+main{
+    background-color: var(--bgColor);
+}
+main .container{
+    display: flex;
+}
+.mainItem{
+    background-color: white;
+    padding: 1rem;
+    margin: 1rem 0.5rem;
+}
+main .container #mainColumn{
+    flex: 70vw;
+}
+main .container #mainAside{
+    flex: 30vw;
+}
+
+
+/* -------- /Main -------- */
+
 @media screen and (max-width: 800px){
 
     /* -------- Menu -------- */
+
     .topNav{
         text-align: left;
     }
@@ -104,6 +133,7 @@ header > hr{
         text-align: left;
         float: none;
     }
+
     /* -------- /Menu -------- */
 
     /* -------- Banner -------- */
@@ -115,8 +145,18 @@ header > hr{
         font-size: 7vw;
     }
 
-
-
-
     /* -------- /Banner -------- */
+
+    /* -------- Main -------- */
+
+    main .container{
+        flex-direction: column;
+    }
+    main .container #mainColumn{
+        flex: auto;
+    }
+    main .container #mainAside{
+        flex: auto;
+    }
+    /* -------- /Main -------- */
 }
