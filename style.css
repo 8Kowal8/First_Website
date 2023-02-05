@@ -130,6 +130,7 @@ article h2 a{
     font-weight: 600;
     font-family: Noto Serif;
     line-height: 1.4;
+    color: rgb(114, 56, 168);
 }
 article p{
     color: gray;
@@ -147,6 +148,77 @@ article p{
     letter-spacing: 1rem;
 }
 /* -------- /Article -------- */
+
+/* -------- Widgets -------- */
+
+.quote {
+    background-color: var(--mainColor);
+    color: white;
+    text-align: center;
+}
+.quote p:nth-child(1){
+    font-size: 1.4rem;
+    font-style: italic;
+}
+.mainItem h4{
+    text-transform: uppercase;
+    color: var(--mainColor);
+}
+.mainItem.tags a {
+    background-color: #ccc;
+    text-decoration: none;
+    color: black;
+    padding: 0.6rem 1rem;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 0.2rem 0.1rem;
+}
+.mainItem ul{
+    margin: 0;
+    padding: 0;
+
+}
+.mainItem ul li{
+    list-style-type: none;
+    padding: 1rem 0;
+    position: relative;
+}
+.mainItem ul li:not(:last-child)::after{
+    content: "";
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.mainItem.recentComments ul li span{
+    color: var(--mainColor)
+}
+.mainItem.recentComments ul li span::before{
+    content: "\2014";
+    color: black;
+    padding-right: 0.4rem;
+}
+.mainItem.recentComments ul li a{
+    text-decoration: none;
+    color: #888;
+    display: block;
+    padding-top: 0.3rem;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.mainItem.categories ul li::before{
+    content: "\27B2";
+    padding-right: 0.4rem;
+}
+.mainItem.categories a{
+    color: #888;
+    text-decoration: none;
+}
+
+
+/* -------- /Widgets -------- */
 
 @media screen and (max-width: 800px){
 
