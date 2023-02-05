@@ -148,6 +148,9 @@ article p{
     font-size: 1.2rem;
     letter-spacing: 1rem;
 }
+.shareIcons a:hover{
+    color: blue;
+}
 /* -------- /Article -------- */
 
 /* -------- Widgets -------- */
@@ -173,6 +176,10 @@ article p{
     text-transform: uppercase;
     display: inline-block;
     margin: 0.2rem 0.1rem;
+}
+.mainItem.tags a:hover{
+    background-color: var(--mainColor);
+    color: white;
 }
 .mainItem ul{
     margin: 0;
@@ -257,6 +264,41 @@ article p{
 }
 
 /* -------- /Featured -------- */
+
+/* -------- Footer -------- */
+
+.footer{
+    background-color: black;
+    padding: 2rem 0;
+    color: white;
+    text-align: center;
+}
+.footer .menu a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 0.4rem;
+}
+.footer .social{
+    margin-top: 1.5rem;
+}
+.footer .social a{
+    color: #ccc;
+    letter-spacing: 1rem;
+}
+.footer .social a:hover{
+    color: blue;
+}
+
+.footer .copyright{
+    padding-top: 1.5rem;
+}
+.footer .copyright a{
+    color: red;
+    text-decoration: none;
+}
+
+/* -------- /Footer -------- */
 
 @media screen and (max-width: 800px){
 
